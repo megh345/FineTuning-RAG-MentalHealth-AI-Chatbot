@@ -128,38 +128,5 @@ different:
 The Llama base model is gated on Hugging Face, so local fine-tuning requires a
 Hugging Face account with access to `meta-llama/Llama-3.2-3B-Instruct`.
 
-## What To Keep In GitHub
 
-Recommended to keep:
 
-- source code in `fine_tuning/` and `rag/`;
-- README, setup, and stage documentation;
-- curated raw knowledge-base markdown files;
-- small evaluation gold datasets;
-- small JSON/JSONL evaluation reports that demonstrate measured progress;
-- configuration files with model ids, paths, and reproducibility settings.
-
-Recommended to exclude:
-
-- Python caches such as `__pycache__/`;
-- local virtual environments such as `.venv/` or `venv/`;
-- downloaded model caches;
-- LoRA checkpoints and trained adapter weights unless intentionally published
-  through a model registry;
-- generated tokenized datasets;
-- large generated vector-store files such as Qdrant SQLite databases;
-- secrets, API keys, Hugging Face tokens, and local environment files.
-
-## Suggested Portfolio Framing
-
-This project is best presented as an applied AI engineering system that combines
-model adaptation and retrieval infrastructure with safety-aware evaluation. For
-AI/ML roles, the strongest talking points are:
-
-- practical LLM fine-tuning with LoRA/QLoRA;
-- retrieval system design and staged experimentation;
-- hybrid search and reranking tradeoffs;
-- evaluation-driven iteration;
-- safety and grounding decisions for a sensitive domain;
-- clean separation between training, retrieval, generation support, and runtime
-  integration.
