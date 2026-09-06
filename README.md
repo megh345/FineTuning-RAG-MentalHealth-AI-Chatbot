@@ -14,7 +14,7 @@ evaluation.
 
 ## Demo Video
 
-[Watch the project demo]([./iCare_%20Fine-Tuning,%20RAG,%20and%20AI%20Safety%20Evaluation%20Demo.mov](https://drive.google.com/file/d/1PvTWRoT0bWKJAS6jy3ooUbfi7xGPyJv9/view?usp=drive_link))
+[Watch the project demo](https://drive.google.com/file/d/1PvTWRoT0bWKJAS6jy3ooUbfi7xGPyJv9/view?usp=drive_link)
 
 The demo walks through the fine-tuning workflow, staged RAG pipeline, safety
 checks, and evaluation outputs.
