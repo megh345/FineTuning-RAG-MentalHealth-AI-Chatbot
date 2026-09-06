@@ -1,4 +1,4 @@
-# iCare - Fine-Tuning & RAG — Mental Health AI Chatbot
+# iCare - Fine-Tuning & RAG in Mental Health AI Chatbot
 
 This repository contains two standalone AI engineering projects built for
 CareBot, a supportive mental-health chatbot:
