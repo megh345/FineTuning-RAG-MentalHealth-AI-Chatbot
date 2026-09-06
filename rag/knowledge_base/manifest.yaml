@@ -1,0 +1,109 @@
+# Controlled source inventory for the CareBot RAG baseline.
+#
+# These are concise, manually composed starter summaries based on the linked
+# public-health sources. They are not verbatim source documents and have not
+# been clinically reviewed. Production use requires review by a qualified
+# mental-health professional.
+
+corpus_version: "1.0.0"
+clinical_review_status: "not_reviewed"
+sources:
+  - document_id: scope_and_support
+    file: raw/support/scope_and_support.md
+    title: Chatbot Scope and Professional Support
+    topic: support
+    content_type: policy
+    risk_category: mixed
+    source_name: WHO Mental Health and MedlinePlus
+    source_url: https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response
+    reviewed_on: "2025-10-08"
+  - document_id: crisis_response
+    file: raw/safety/crisis_response.md
+    title: Crisis Response Policy
+    topic: safety
+    content_type: policy
+    risk_category: crisis
+    source_name: SAMHSA 988 Suicide and Crisis Lifeline
+    source_url: https://www.samhsa.gov/mental-health/988
+    reviewed_on: "2025-09-26"
+  - document_id: prompt_injection
+    file: raw/safety/prompt_injection.md
+    title: Prompt Injection Retrieval Policy
+    topic: safety
+    content_type: policy
+    risk_category: non_crisis
+    source_name: iCare internal safety policy
+    source_url: internal://carebot/prompt-injection-policy
+    reviewed_on: "2026-07-08"
+  - document_id: breathing
+    file: raw/anxiety/breathing.md
+    title: Breathing Exercises for Stress and Anxiety
+    topic: breathing
+    content_type: coping_exercise
+    risk_category: non_crisis
+    source_name: NHS Breathing Exercises for Stress
+    source_url: https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/
+    reviewed_on: "2026-06-12"
+  - document_id: grounding
+    file: raw/anxiety/grounding.md
+    title: Grounding Techniques
+    topic: grounding
+    content_type: coping_exercise
+    risk_category: non_crisis
+    source_name: NHS Inform Grounding Exercises
+    source_url: https://www.nhsinform.scot/healthy-living/mental-wellbeing/breathing-and-relaxation-exercises/grounding-exercises/
+    reviewed_on: "2025-12-09"
+  - document_id: panic
+    file: raw/anxiety/panic.md
+    title: Panic Support and Coping Steps
+    topic: panic
+    content_type: guidance
+    risk_category: mixed
+    source_name: NIMH Panic Disorder
+    source_url: https://www.nimh.nih.gov/health/publications/panic-disorder-when-fear-overwhelms
+    reviewed_on: "2026-06-30"
+  - document_id: anxiety
+    file: raw/anxiety/anxiety.md
+    title: Anxiety Self-Help and Support
+    topic: anxiety
+    content_type: guidance
+    risk_category: non_crisis
+    source_name: NIMH Anxiety Disorders
+    source_url: https://www.nimh.nih.gov/health/topics/anxiety-disorders
+    reviewed_on: "2026-06-30"
+  - document_id: stress
+    file: raw/stress/stress.md
+    title: Stress Management
+    topic: stress
+    content_type: guidance
+    risk_category: non_crisis
+    source_name: WHO Stress
+    source_url: https://www.who.int/news-room/questions-and-answers/item/stress
+    reviewed_on: "2026-03-30"
+  - document_id: depression
+    file: raw/depression/depression.md
+    title: Low Mood and Depression Self-Care
+    topic: depression
+    content_type: guidance
+    risk_category: mixed
+    source_name: NIMH Depression
+    source_url: https://www.nimh.nih.gov/health/publications/depression
+    reviewed_on: "2026-06-30"
+  - document_id: cbt_thought_record
+    file: raw/cbt/thought_record.md
+    title: CBT Thought Record
+    topic: cbt
+    content_type: reflection_exercise
+    risk_category: non_crisis
+    source_name: Centre for Clinical Interventions
+    source_url: https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Depression
+    reviewed_on: "2019-10-28"
+  - document_id: sleep
+    file: raw/sleep/sleep.md
+    title: Sleep and Routine Support
+    topic: sleep
+    content_type: guidance
+    risk_category: non_crisis
+    source_name: NHS Every Mind Matters
+    source_url: https://www.nhs.uk/every-mind-matters/mental-health-issues/sleep/
+    reviewed_on: "2026-06-30"

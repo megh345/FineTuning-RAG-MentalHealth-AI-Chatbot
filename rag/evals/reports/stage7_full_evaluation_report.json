@@ -1,0 +1,79 @@
+{
+  "experiment": {
+    "stage": "stage_7",
+    "framework": "full_rag_evaluation",
+    "components": [
+      "retrieval",
+      "context_assembly",
+      "guardrails"
+    ],
+    "generation_eval_status": "pending_runtime_generator_integration"
+  },
+  "retrieval": {
+    "stage2_dense": {
+      "recall_at_3": 0.6875,
+      "recall_at_5": 0.8333333333333334,
+      "recall_at_10": 0.8958333333333334,
+      "mrr_at_3": 0.8125,
+      "mrr_at_5": 0.8208333333333333,
+      "mrr_at_10": 0.8208333333333333,
+      "ndcg_at_3": 0.6668016380742282,
+      "ndcg_at_5": 0.7334562956110747,
+      "ndcg_at_10": 0.7580910958120342
+    },
+    "stage3_hybrid": {
+      "recall_at_3": 0.6875,
+      "recall_at_5": 0.7916666666666666,
+      "recall_at_10": 0.8958333333333334,
+      "mrr_at_3": 0.9166666666666666,
+      "mrr_at_5": 0.9375,
+      "mrr_at_10": 0.9375,
+      "ndcg_at_3": 0.7293242286610253,
+      "ndcg_at_5": 0.7780383997520491,
+      "ndcg_at_10": 0.8219146960712264
+    },
+    "stage4_reranked": {
+      "recall_at_3": 0.7708333333333334,
+      "recall_at_5": 0.8333333333333334,
+      "recall_at_10": 0.8958333333333334,
+      "mrr_at_3": 0.9166666666666666,
+      "mrr_at_5": 0.9166666666666666,
+      "mrr_at_10": 0.9166666666666666,
+      "ndcg_at_3": 0.7604398155791614,
+      "ndcg_at_5": 0.7923287304922647,
+      "ndcg_at_10": 0.8176356276250237
+    }
+  },
+  "context": {
+    "context_pass_rate": 1.0,
+    "abstention_rate": 0.0,
+    "relevant_context_rate": 1.0,
+    "citation_consistency_rate": 1.0,
+    "average_citation_count": 5.0,
+    "average_context_chars": 2014.7083333333333,
+    "average_relevant_chunks_included": 1.375
+  },
+  "guardrails": {
+    "action_accuracy": 1.0,
+    "category_recall": 1.0,
+    "exact_match_accuracy": 1.0
+  },
+  "quality_gates": {
+    "stage4_recall_at_5": {
+      "actual": 0.8333333333333334,
+      "minimum": 0.8,
+      "passed": true
+    },
+    "context_relevant_context_rate": {
+      "actual": 1.0,
+      "minimum": 0.8,
+      "passed": true
+    },
+    "guardrail_exact_match_accuracy": {
+      "actual": 1.0,
+      "minimum": 0.95,
+      "passed": true
+    }
+  },
+  "passed": true
+}

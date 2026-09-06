@@ -1,0 +1,56 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+
+# Hugging Face and model caches
+.cache/
+**/.cache/
+hf_cache/
+huggingface/
+
+# Fine-tuning generated artifacts
+carebot/data/mentalchat16k/
+carebot/data/mentalchat16k_tokenized/
+carebot/data/mentalchat16k_eval/
+carebot/models/
+**/models/
+**/checkpoints/
+**/checkpoint-*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# RAG generated vector stores and local databases
+rag/knowledge_base/processed/qdrant/
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/

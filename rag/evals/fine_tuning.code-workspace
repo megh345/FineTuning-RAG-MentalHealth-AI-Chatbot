@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../fine_tuning"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

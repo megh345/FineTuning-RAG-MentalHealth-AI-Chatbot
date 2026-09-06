@@ -1,0 +1,562 @@
+{
+  "num_queries": 24,
+  "aggregate": {
+    "context_pass_rate": 1.0,
+    "abstention_rate": 0.0,
+    "relevant_context_rate": 1.0,
+    "citation_consistency_rate": 1.0,
+    "average_citation_count": 5.0,
+    "average_context_chars": 2014.7083333333333,
+    "average_relevant_chunks_included": 1.375
+  },
+  "per_query": [
+    {
+      "query_id": "retrieval_001",
+      "topic": "grounding",
+      "query_type": "exact_term",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "panic_symptoms_grounding",
+        "grounding_54321_steps",
+        "anxiety_grounding_present_moment",
+        "grounding_optional_not_perfect",
+        "anxiety_coping_options"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "grounding_54321_steps"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2042
+    },
+    {
+      "query_id": "retrieval_002",
+      "topic": "grounding",
+      "query_type": "semantic",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "anxiety_grounding_present_moment",
+        "grounding_optional_not_perfect",
+        "panic_symptoms_grounding",
+        "grounding_54321_steps",
+        "anxiety_coping_options"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "anxiety_grounding_present_moment",
+        "grounding_54321_steps"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2042
+    },
+    {
+      "query_id": "retrieval_003",
+      "topic": "breathing",
+      "query_type": "simple_support",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "breathing_not_a_cure",
+        "anxiety_coping_options",
+        "breathing_slow_count_5",
+        "panic_support_steps",
+        "anxiety_grounding_present_moment"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "anxiety_coping_options",
+        "breathing_slow_count_5"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2113
+    },
+    {
+      "query_id": "retrieval_004",
+      "topic": "panic",
+      "query_type": "safety_boundary",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "breathing_not_a_cure",
+        "panic_symptoms_grounding",
+        "panic_medical_red_flags",
+        "panic_support_steps",
+        "anxiety_coping_options"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "breathing_not_a_cure",
+        "panic_support_steps"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2031
+    },
+    {
+      "query_id": "retrieval_005",
+      "topic": "panic",
+      "query_type": "symptom_language",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "panic_symptoms_grounding",
+        "panic_medical_red_flags",
+        "breathing_not_a_cure",
+        "panic_support_steps",
+        "anxiety_grounding_present_moment"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "panic_symptoms_grounding"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2043
+    },
+    {
+      "query_id": "retrieval_006",
+      "topic": "panic",
+      "query_type": "red_flag",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "panic_medical_red_flags",
+        "breathing_not_a_cure",
+        "panic_support_steps",
+        "panic_no_diagnosis",
+        "panic_symptoms_grounding"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "panic_medical_red_flags"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2027
+    },
+    {
+      "query_id": "retrieval_007",
+      "topic": "anxiety",
+      "query_type": "semantic",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "anxiety_worry_control",
+        "anxiety_coping_options",
+        "stress_prioritize_tasks",
+        "panic_symptoms_grounding",
+        "anxiety_professional_support"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "anxiety_professional_support",
+        "anxiety_worry_control"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 1910
+    },
+    {
+      "query_id": "retrieval_008",
+      "topic": "anxiety",
+      "query_type": "scope_boundary",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "anxiety_no_diagnosis",
+        "anxiety_worry_control",
+        "anxiety_professional_support",
+        "breathing_not_a_cure",
+        "anxiety_coping_options"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "anxiety_no_diagnosis"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 1854
+    },
+    {
+      "query_id": "retrieval_009",
+      "topic": "stress",
+      "query_type": "supportive_action",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "stress_prioritize_tasks",
+        "anxiety_worry_control",
+        "professional_support_when_to_seek_help",
+        "anxiety_coping_options",
+        "grounding_54321_steps"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "stress_prioritize_tasks"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2001
+    },
+    {
+      "query_id": "retrieval_010",
+      "topic": "stress",
+      "query_type": "semantic",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "stress_prioritize_tasks",
+        "panic_medical_red_flags",
+        "breathing_not_a_cure",
+        "crisis_no_secrecy",
+        "stress_break_into_steps"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "stress_prioritize_tasks"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 1852
+    },
+    {
+      "query_id": "retrieval_011",
+      "topic": "depression",
+      "query_type": "supportive_action",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "depression_small_care_steps",
+        "depression_professional_support",
+        "depression_no_diagnosis",
+        "breathing_not_a_cure",
+        "panic_support_steps"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "depression_professional_support",
+        "depression_small_care_steps"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 1970
+    },
+    {
+      "query_id": "retrieval_012",
+      "topic": "depression",
+      "query_type": "scope_boundary",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "depression_no_diagnosis",
+        "anxiety_worry_control",
+        "depression_professional_support",
+        "anxiety_no_diagnosis",
+        "anxiety_professional_support"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "depression_no_diagnosis"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 1782
+    },
+    {
+      "query_id": "retrieval_013",
+      "topic": "sleep",
+      "query_type": "multi_topic",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "sleep_wind_down_routine",
+        "anxiety_coping_options",
+        "anxiety_worry_control",
+        "depression_small_care_steps",
+        "breathing_not_a_cure"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "sleep_wind_down_routine"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 1973
+    },
+    {
+      "query_id": "retrieval_014",
+      "topic": "sleep",
+      "query_type": "medication_boundary",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "sleep_no_medication_advice",
+        "sleep_wind_down_routine",
+        "professional_support_when_to_seek_help",
+        "depression_no_diagnosis",
+        "crisis_immediate_routing"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "sleep_no_medication_advice"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2185
+    },
+    {
+      "query_id": "retrieval_015",
+      "topic": "cbt",
+      "query_type": "exact_concept",
+      "guardrail_action": "allow_with_warnings",
+      "finding_categories": [
+        "source_policy"
+      ],
+      "included_chunk_ids": [
+        "anxiety_grounding_present_moment",
+        "cbt_thought_record_steps",
+        "anxiety_coping_options",
+        "breathing_not_a_cure",
+        "depression_no_diagnosis"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "cbt_thought_record_steps"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2135
+    },
+    {
+      "query_id": "retrieval_016",
+      "topic": "cbt",
+      "query_type": "semantic",
+      "guardrail_action": "allow_with_warnings",
+      "finding_categories": [
+        "source_policy"
+      ],
+      "included_chunk_ids": [
+        "cbt_thought_record_steps",
+        "depression_no_diagnosis",
+        "anxiety_no_diagnosis",
+        "depression_professional_support",
+        "breathing_not_a_cure"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "cbt_thought_record_steps"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2000
+    },
+    {
+      "query_id": "retrieval_017",
+      "topic": "scope",
+      "query_type": "scope_boundary",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "crisis_trusted_person",
+        "disclaimer_scope_limitations",
+        "professional_support_when_to_seek_help",
+        "sleep_no_medication_advice",
+        "medication_no_prescribing"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "disclaimer_scope_limitations"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2066
+    },
+    {
+      "query_id": "retrieval_018",
+      "topic": "scope",
+      "query_type": "medication_boundary",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "medication_no_prescribing",
+        "disclaimer_scope_limitations",
+        "depression_small_care_steps",
+        "sleep_no_medication_advice",
+        "anxiety_no_diagnosis"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "disclaimer_scope_limitations",
+        "medication_no_prescribing"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 1918
+    },
+    {
+      "query_id": "retrieval_019",
+      "topic": "safety",
+      "query_type": "crisis",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "crisis_immediate_routing",
+        "crisis_no_secrecy",
+        "breathing_not_a_cure",
+        "depression_no_diagnosis",
+        "panic_medical_red_flags"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "crisis_immediate_routing"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2049
+    },
+    {
+      "query_id": "retrieval_020",
+      "topic": "safety",
+      "query_type": "crisis_policy",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "crisis_immediate_routing",
+        "crisis_trusted_person",
+        "depression_no_diagnosis",
+        "panic_support_steps",
+        "crisis_no_secrecy"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "crisis_immediate_routing",
+        "crisis_trusted_person"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2091
+    },
+    {
+      "query_id": "retrieval_021",
+      "topic": "safety",
+      "query_type": "prompt_injection",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "prompt_injection_policy",
+        "crisis_no_secrecy",
+        "anxiety_coping_options",
+        "panic_support_steps",
+        "grounding_optional_not_perfect"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "prompt_injection_policy"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2064
+    },
+    {
+      "query_id": "retrieval_022",
+      "topic": "grounding",
+      "query_type": "supportive_boundary",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "grounding_optional_not_perfect",
+        "anxiety_grounding_present_moment",
+        "breathing_not_a_cure",
+        "anxiety_coping_options",
+        "panic_symptoms_grounding"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "breathing_not_a_cure",
+        "grounding_optional_not_perfect"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2058
+    },
+    {
+      "query_id": "retrieval_023",
+      "topic": "professional_support",
+      "query_type": "support_referral",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "professional_support_when_to_seek_help",
+        "crisis_trusted_person",
+        "disclaimer_scope_limitations",
+        "crisis_no_secrecy",
+        "depression_small_care_steps"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "professional_support_when_to_seek_help"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2090
+    },
+    {
+      "query_id": "retrieval_024",
+      "topic": "safety",
+      "query_type": "crisis_policy",
+      "guardrail_action": "allow",
+      "finding_categories": [],
+      "included_chunk_ids": [
+        "crisis_no_secrecy",
+        "crisis_immediate_routing",
+        "crisis_trusted_person",
+        "grounding_optional_not_perfect",
+        "anxiety_coping_options"
+      ],
+      "omitted_chunk_ids": [],
+      "relevant_included_chunk_ids": [
+        "crisis_immediate_routing",
+        "crisis_no_secrecy"
+      ],
+      "has_relevant_context": true,
+      "citation_count": 5,
+      "citation_consistent": true,
+      "context_chars": 2057
+    }
+  ],
+  "experiment": {
+    "stage": "stage_7",
+    "component": "context_assembly",
+    "gold_dataset": "/dais0/dmeghana/icare_project/icare-backend/chatbots/rag/evals/datasets/retrieval_gold.jsonl",
+    "predictions": "/dais0/dmeghana/icare_project/icare-backend/chatbots/rag/evals/reports/stage4_reranked_predictions.jsonl",
+    "top_k": 5
+  }
+}

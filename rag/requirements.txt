@@ -1,0 +1,54 @@
+# Standalone RAG dependencies, grouped by the stage that introduced them.
+#
+# Install all completed stages with:
+#   python -m pip install -r rag/requirements.txt
+#
+# Stage 0: architecture and minimal retrieval evaluation
+# No external packages. The scaffold and metrics use the Python standard library.
+
+# Stage 1: knowledge base and ingestion
+# Parses and validates knowledge_base/manifest.yaml.
+PyYAML==6.0.3
+
+# Stage 2: dense retrieval baseline
+# NumPy represents embedding arrays used by indexing and tests.
+numpy==1.26.3
+# Qdrant provides local vector storage and cosine-similarity search.
+qdrant-client==1.18.0
+# Sentence Transformers loads all-MiniLM-L6-v2 and creates dense embeddings.
+sentence-transformers==5.6.0
+
+# Stage 3: BM25 sparse retrieval and reciprocal rank fusion
+# FastEmbed loads Qdrant/bm25 and creates sparse document/query vectors.
+fastembed==0.8.0
+# Runtime used by FastEmbed model infrastructure.
+onnxruntime==1.27.0
+# Logging dependency used by FastEmbed.
+loguru==0.7.3
+# MurmurHash implementation used for sparse token hashing.
+mmh3==5.2.1
+# Stemming used by BM25 text processing.
+py-rust-stemmers==0.1.8
+
+# Stage 4: CrossEncoder reranking
+# No new package. Reuses sentence-transformers==5.6.0 from Stage 2 to load
+# cross-encoder/ms-marco-MiniLM-L6-v2. The model is a separate download, not a
+# Python package; its exact revision is pinned in rag/config.py.
+
+# Stage 5: context assembly and citations
+# No new package. Uses the Python standard library and the retrieval results
+# produced by earlier stages. Running rag.generation.query_context reuses the
+# Stage 2-4 retrieval dependencies and model caches.
+
+# Stage 6: deterministic RAG guardrails
+# No new package. Uses Python standard-library regex, dataclasses, enums, date
+# handling, and URL parsing. PII handling is a conservative regex baseline for
+# log/eval redaction, not an external Presidio install.
+
+# Stage 7: full evaluation framework
+# No new package. Uses existing retrieval reports, JSONL datasets, context
+# assembly, and deterministic guardrail modules.
+
+# Stage 8: conditional query rewriting
+# No new package. Uses deterministic Python standard-library regex rules and
+# reuses Stage 6 guardrails plus Stage 4 reranked retrieval.

@@ -1,0 +1,14 @@
+# Fine-tuning dependencies for the CareBot LoRA/QLoRA workflow.
+#
+# Install from the repository root with:
+#   python -m pip install -r fine_tuning/requirements.txt
+
+datasets>=2.19.0
+transformers>=4.43.0
+torch>=2.2.0
+peft>=0.11.0
+accelerate>=0.30.0
+bitsandbytes>=0.43.0
+rouge-score>=0.1.2
+sacrebleu>=2.4.0
+bert-score>=0.3.13
