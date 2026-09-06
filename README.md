@@ -21,7 +21,7 @@ checks, and evaluation outputs.
 
 ## Project Highlights
 
-- Built a LoRA/QLoRA fine-tuning pipeline for Llama 3.2 3B Instruct using the
+- Built a QLoRA fine-tuning pipeline for Llama 3.2 3B Instruct using the
   `ShenLab/MentalChat16K` dataset.
 - Added dataset cleaning, deduplication, safety filtering, train/validation/test
   splitting, tokenization, adapter training, and base-vs-adapter evaluation.
