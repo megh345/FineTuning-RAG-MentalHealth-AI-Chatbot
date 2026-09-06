@@ -37,7 +37,7 @@ checks, and evaluation outputs.
 ## Repository Structure
 
 ```text
-AI_Projects/
+iCare_Projects/
 ├── fine_tuning/
 │   ├── prepare_mentalchat16k.py
 │   ├── tokenize_mentalchat16k.py
