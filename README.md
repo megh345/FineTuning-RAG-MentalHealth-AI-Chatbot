@@ -12,6 +12,13 @@ The goal is to show an end-to-end applied AI/ML system: dataset preparation,
 model adaptation, retrieval infrastructure, safety controls, and measurable
 evaluation.
 
+## Demo Video
+
+[Watch the project demo](./iCare_%20Fine-Tuning,%20RAG,%20and%20AI%20Safety%20Evaluation%20Demo.mov)
+
+The demo walks through the fine-tuning workflow, staged RAG pipeline, safety
+checks, and evaluation outputs.
+
 ## Project Highlights
 
 - Built a LoRA/QLoRA fine-tuning pipeline for Llama 3.2 3B Instruct using the
