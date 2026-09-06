@@ -1,4 +1,4 @@
-# CareBot AI/ML Portfolio Project
+# iCare - CareBot AI/ML Project
 
 This repository contains two standalone AI engineering projects built for
 CareBot, a supportive mental-health chatbot:
